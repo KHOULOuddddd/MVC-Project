@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "z8/zeQsWCOjSwaXFaLo0ie+koqZ8jnv6T8LboUvO0eb02qaMLk4bOksQWygr5WPvz0+8RRX7Z+6P84vI1MryZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC DEV2\\Desktop\\MVC\\MVC Project\\MVC Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\docker.dotnet\\3.125.5\\docker.dotnet.3.125.5.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\ssh.net\\2020.0.1\\ssh.net.2020.0.1.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\sshnet.security.cryptography\\1.3.0\\sshnet.security.cryptography.1.3.0.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\PC DEV2\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

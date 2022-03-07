@@ -1,0 +1,41 @@
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\appsettings.json
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.exe
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.deps.json
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.runtimeconfig.json
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.runtimeconfig.dev.json
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\ref\MVC Project.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.pdb
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.Views.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\MVC Project.Views.pdb
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.csproj.AssemblyReference.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.AssemblyInfoInputs.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.AssemblyInfo.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.csproj.CoreCompileInputs.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.RazorAssemblyInfo.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.RazorAssemblyInfo.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\scopedcss\bundle\MVC Project.styles.css
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\staticwebassets\MVC Project.StaticWebAssets.Manifest.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.TagHelpers.input.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.TagHelpers.output.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.RazorCoreGenerate.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.RazorTargetAssemblyInfo.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.RazorTargetAssemblyInfo.cs
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.Views.pdb
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\ref\MVC Project.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.pdb
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.genruntimeconfig.cache
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\obj\Debug\net5.0\MVC Project.csproj.CopyComplete
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\Docker.DotNet.dll
+C:\Users\PC DEV2\source\repos\MVC Project\MVC Project\bin\Debug\net5.0\Newtonsoft.Json.dll
