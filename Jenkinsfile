@@ -1,16 +1,16 @@
+//def ReleaseDir = "c:\inetpub\wwwroot"
 pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'mcr.microsoft.com/dotnet/sdk' 
-                    args '-p 3000:3000'
-                }
-            }
-            steps {
-                sh 'dotnet --version'
-            }
-        }
-    }
+			agent any
+			stages {
+				stage('Source'){
+					steps{
+						checkout([$class: 'GitSCM', branches: [[name: '*/master']]])
+					}
+				}
+				stage('Build') {
+    					steps {
+    					    bat "\"${tool 'MSBuild'}\" MVC Project.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=c:\\inetpub\\wwwroot"
+    					}
+				}
+			}
 }
