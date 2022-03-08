@@ -1,16 +1,23 @@
-//def ReleaseDir = "c:\inetpub\wwwroot"
 pipeline {
-			agent any
-			stages {
-				stage('Source'){
-					steps{
-						checkout([$class: 'GitSCM', branches: [[name: '*/master']]])
-					}
-				}
-				stage('Build') {
-    					steps {
-    					    bat "\"${tool 'MSBuild'}\" MVC Project.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=c:\\inetpub\\wwwroot"
-    					}
-				}
-			}
+    agent any
+    triggers {
+        githubPush()
+    }
+    stages {
+        stage('Restore packages'){
+           steps{
+               sh 'dotnet restore MVC Project.sln'
+            }
+         }
+        stage('Clean'){
+           steps{
+               sh 'dotnet clean MVC Project.sln --configuration Release'
+            }
+         }
+        stage('Build'){
+           steps{
+               sh 'dotnet build MVC Project.sln --configuration Release --no-restore'
+            }
+         }
+    }
 }
