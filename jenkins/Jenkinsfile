@@ -5,8 +5,8 @@ pipeline {
             agent any
             steps {
                 checkout scm
-                bat 'make'
-                bat 'docker build -t dotnet .' 
+                sh 'make'
+                sh 'docker build -t dotnet .' 
             }
         }
     }
