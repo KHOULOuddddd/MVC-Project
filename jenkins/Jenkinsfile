@@ -5,12 +5,13 @@ pipeline {
             steps {
                 checkout scm
             }
-        }
-        agent { dockerfile true }
-        stage('Execute') {
-            steps {
-                sh 'docker --version'
+              steps {
+                sh 'docker build -t dotnet .'
             }
+        
         }
+       
+        
+          
     }
 }
