@@ -1,12 +1,11 @@
 pipeline {
-    agent none
-    stages {
-        stage('Build') {
-            agent any
-            steps {
-                checkout scm
-                bat 'ls'
-            }
-        }
+  agent docker:'mcr.microsoft.com/dotnet/aspnet:5.0'
+  stages {
+    stage('build') {
+      steps {
+        sh 'docker build -t dotnet .'
+
+      }
     }
+  }
 }
