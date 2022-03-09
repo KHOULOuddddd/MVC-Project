@@ -1,9 +1,9 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
     stages {
         stage('Build') {
             steps {
-                sh 'dotnet --version'
+                checkout scm
             }
         }
     }
