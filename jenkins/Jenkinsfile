@@ -4,14 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 checkout scm
-            }
-              steps {
                 sh 'docker build -t dotnet .'
-            }
-        
-        }
-       
-        
-          
+            }  
+        }   
     }
 }
