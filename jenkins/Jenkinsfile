@@ -6,7 +6,6 @@ pipeline {
             steps {
                 checkout scm
                 sh 'make'
-                sh 'docker build -t dotnet .' 
             }
         }
     }
