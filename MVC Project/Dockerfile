@@ -11,7 +11,7 @@ RUN dotnet restore "MVC Project/MVC Project.csproj"
 COPY . .
 WORKDIR "/src/MVC Project"
 RUN dotnet build "MVC Project.csproj" -c Release -o /app/build
-EXPOSE 8000
+
 
 FROM build AS publish
 RUN dotnet publish "MVC Project.csproj" -c Release -o /app/publish
