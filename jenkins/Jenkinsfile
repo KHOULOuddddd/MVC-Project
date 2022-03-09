@@ -1,11 +1,17 @@
 pipeline {
-  agent docker:'mcr.microsoft.com/dotnet/aspnet:5.0'
-  stages {
-    stage('build') {
-      steps {
-        sh 'docker build -t dotnet .'
-
-      }
+    agent any
+    stages {
+        stage('Build') {
+            agent {
+                docker {
+                    image 'mcr.microsoft.com/dotnet/aspnet:5.0'
+                    // Run the container on the node specified at the top-level of the Pipeline, in the same workspace, rather than on a new node entirely:
+                    reuseNode true
+                }
+            }
+            steps {
+                sh 'dotnet --version'
+            }
+        }
     }
-  }
 }
