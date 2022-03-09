@@ -1,10 +1,28 @@
 pipeline {
     agent any
-    stages {
-        stage('Test') {
-            steps {
-                sh 'ls'
-            }
+    stage ('Clean workspace') {
+        steps {
+            cleanWs()
         }
     }
+    stage ('Git Checkout') {
+        steps {
+            git branch: 'main', url: 'https://github.com/KHOULOuddddd/MVC-Project.git'
+    }
+  }
+    stage('Restore packages') {
+        steps {
+            bat "dotnet restore ${workspace}\\/var/jenkins_home/MVC Project\\MVC Project.sln"
+  }
+}
+    stage('Build') {
+        steps {
+            bat "${workspace}\\/var/jenkins_home/MVC Project\\MVC Project.sln /nologo /nr:false  /p:platform=\"x64\" /t:clean;restore;rebuild"
+ }
+}
+    stage('Publish HTML report') {
+        steps {
+            publishHTML(target: [allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportFiles: 'index.html', reportName: 'HTML Report'])
+  }
+}
 }
