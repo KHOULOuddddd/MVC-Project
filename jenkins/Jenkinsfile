@@ -6,10 +6,8 @@ pipeline {
                 checkout scm
             }
         }
+        agent { dockerfile true }
         stage('Execute') {
-            agent {
-                { dockerfile true }
-            }
             steps {
                 sh 'docker --version'
             }
