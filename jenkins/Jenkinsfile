@@ -2,14 +2,12 @@ pipeline {
     agent none
     stages {
         stage('Build') {
-            agent {
-                docker { image 'mcr.microsoft.com/dotnet/aspnet:5.0' }
-            }
+            agent any
             steps {
-                bat 'docker build -t dotnet .'
-                bat 'dotnet --version'
+                checkout scm
+                bat 'make'
+                bat 'docker build -t dotnet .' 
             }
         }
-
     }
 }
