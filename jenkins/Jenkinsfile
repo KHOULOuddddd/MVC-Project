@@ -6,8 +6,8 @@ pipeline {
                 docker { image 'mcr.microsoft.com/dotnet/aspnet:5.0' }
             }
             steps {
-                sh 'docker build -t dotnet .'
-                sh 'dotnet --version'
+                bat 'docker build -t dotnet .'
+                bat 'dotnet --version'
             }
         }
 
