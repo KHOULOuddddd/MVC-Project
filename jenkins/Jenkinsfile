@@ -24,7 +24,7 @@ pipeline {
     
     }
     }
-    catch(all) {
+    catch {
         currentBuild.result = 'FAILURE'
     }    
 }
