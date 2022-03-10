@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Dotnet Test') {
         steps {
-          sh 'dotnet bin/HomeControllerTest.cs --test'
+          sh 'dotnet MVC/MVC Test Project/Controllers/HomeControllerTest.cs --test'
         }
       }
     }
