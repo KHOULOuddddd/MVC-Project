@@ -13,7 +13,7 @@ pipeline {
                 }
             post {
                 always {
-                    echo "Post-Test result: ${currentBuild.result}"
+                    echo "Post-Test res: ${currentBuild.result}"
                     echo "Post-Test currentResult: ${currentBuild.currentResult}"
                 }
             }
