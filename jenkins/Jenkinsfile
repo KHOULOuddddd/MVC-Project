@@ -9,10 +9,14 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\" --logger \"trx;LogFileName=unit_tests.xml\" --no-build"
-                    step([ testResultsFile:"**/unit_tests.xml", failOnError: true, keepLongStdio: true])
-
-}
+                bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\"  --no-build"
+                }
+            post {
+                always {
+                    echo "Post-Test result: ${currentBuild.result}"
+                    echo "Post-Test currentResult: ${currentBuild.currentResult}"
+                }
+            }
         }
     
     }
