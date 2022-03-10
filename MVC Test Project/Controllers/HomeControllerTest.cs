@@ -14,8 +14,6 @@ namespace MVC_Test_Project
             //Arrange
             HomeController controller = new HomeController(null);
 
-            //Act
-            ViewResult result = controller.Index() as ViewResult;
 
             //Assert
             Assert.IsNull(result);   
