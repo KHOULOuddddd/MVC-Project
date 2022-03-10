@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test -c:Release \"${workspace}/MVC Project.sln\" --no-build"
+                bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\" --no-build --no-restore --logger trx"
                 }
             post {
                 always {
