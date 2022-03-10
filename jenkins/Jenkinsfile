@@ -5,6 +5,13 @@ pipeline {
             steps {
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"${workspace}/MVC Project.sln\""
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
+            }
+            dockerfile {
+            filename 'Dockerfile.build'
+            dir 'build'
+            label 'my-defined-label'
+            additionalBuildArgs  '--build-arg version=1.0.2'
+            args '-v /tmp:/tmp'
             }  
         }
         stage('Test') {
