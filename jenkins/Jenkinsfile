@@ -14,13 +14,13 @@ pipeline {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
                 }
         }
-        stage('Deploy') {
+        stage('Deploy'){
             when {
-              expression {
-                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
-              }
+                expression {
+                    currentBuild.result == null || currentBuild.result == 'SUCCESS' 
+                }
             }
         }
-    }
    
+}
 }
