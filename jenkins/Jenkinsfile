@@ -20,6 +20,22 @@ pipeline {
                     echo "Post-Test currentResult: ${currentBuild.currentResult}"
                 }
             }
+            post {
+                always {
+                    script {
+                        def failed = publishCoverage (failUnhealthy: true, 
+                                    globalThresholds: [[thresholdTarget: 'Package', unhealthyThreshold: 50.0]],
+                                    adapters: [coberturaAdapter(
+                                        mergeToOneReport: true, 
+                                        path: '**/*.cobertura.xml')])
+                        if (failed) {
+                            currentBuild.result = 'FAILURE'
+                            currentBuild.displayName = "${currentBuild.displayName} Coverage"
+                            currentBuild.description = "Coverage lower than 50%"
+                        }
+                    }
+    }
+}
         }
     
     }
