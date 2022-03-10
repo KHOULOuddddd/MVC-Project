@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\" --no-build"
+                bat "dotnet add ${workspace}/"\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\"/MVC Test Project.csproj package JUnitTestLogger --version 1.1.0"
                 }
             post {
                 always {
