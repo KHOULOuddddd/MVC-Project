@@ -8,8 +8,8 @@ pipeline {
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
             }
             
-        }
-        stage('dockerfile'){
+        
+            steps{
             dockerfile {
             filename 'Dockerfile.build'
             dir 'build'
@@ -17,7 +17,7 @@ pipeline {
             additionalBuildArgs  '--build-arg version=1.0.2'
             args '-v /tmp:/tmp'
             } 
-        }
+        }}
         stage('Test') {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\"  --no-build"
