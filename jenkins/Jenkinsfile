@@ -7,10 +7,16 @@ pipeline {
                 bat 'docker build -t dotnet .'
             }  
         }
-        stage('Dotnet Test') {
-        steps {
-          sh 'dotnet MVC/MVC Test Project/Controllers/HomeControllerTest.cs --test'
+        stage('UnitTest') {
+            steps {
+                script {
+                bat label: 'Unit Test using Dotnet CLI',
+                script: '''
+                dotnet.exe test .\\MVC Test Project\\
+                '''
         }
       }
+    }
+    
     }
 }
