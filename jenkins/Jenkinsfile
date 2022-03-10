@@ -13,12 +13,6 @@ pipeline {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
                 }
-            post {
-                always {
-                    echo "Post-Test res: ${currentBuild.result}"
-                    echo "Post-Test currentResult: ${currentBuild.currentResult}"
-
-}
         }
     
     }
