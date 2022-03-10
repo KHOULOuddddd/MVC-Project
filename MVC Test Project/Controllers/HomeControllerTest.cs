@@ -18,7 +18,7 @@ namespace MVC_Test_Project
             ViewResult result = controller.Index() as ViewResult;
 
             //Assert
-            Assert.IsNull(result);   
+            Assert.IsNotNull(result);   
         }
     }
 }
