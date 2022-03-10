@@ -3,10 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                
-                bat 'docker build -t dotnet .'
+                checkout scm
+                bat 'dotnetBuild'
             }  
         }
-         
+        stage('Test') {
+            steps {
+                bat 'dotnetRun'
+            }  
+        }   
     }
 }
