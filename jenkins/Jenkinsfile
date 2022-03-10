@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" test \"${workspace}/MVC Project.sln\" --no-build"
+                bat 'make check'
                 }
             post {
                 always {
