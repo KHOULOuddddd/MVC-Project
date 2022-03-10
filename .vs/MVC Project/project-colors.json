@@ -15,7 +15,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Fichiers divers",
       "ColorIndex": -1
+    },
+    "071910d8-8f26-460c-acd5-0740e8245c21": {
+      "ProjectGuid": "071910d8-8f26-460c-acd5-0740e8245c21",
+      "DisplayName": "MVC Test Project",
+      "ColorIndex": 2
+    },
+    "3625347e-d445-4e2b-bd5d-d06695166272": {
+      "ProjectGuid": "3625347e-d445-4e2b-bd5d-d06695166272",
+      "DisplayName": "MVC Test Project",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
