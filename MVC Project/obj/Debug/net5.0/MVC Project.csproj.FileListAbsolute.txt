@@ -54,7 +54,6 @@ C:\Users\PC DEV2\Desktop\MVC\MVC Project\bin\Debug\net5.0\Docker.DotNet.dll
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\bin\Debug\net5.0\Renci.SshNet.dll
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
-C:\Users\PC DEV2\Desktop\MVC\MVC Project\obj\Debug\net5.0\MVC Project.csproj.AssemblyReference.cache
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\obj\Debug\net5.0\MVC Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\obj\Debug\net5.0\MVC Project.AssemblyInfoInputs.cache
 C:\Users\PC DEV2\Desktop\MVC\MVC Project\obj\Debug\net5.0\MVC Project.AssemblyInfo.cs
