@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
-                nunit 'unit_tests.xml'
+                nunit testResultsPattern: 'unit_tests.xml'
                 }
         }
         
