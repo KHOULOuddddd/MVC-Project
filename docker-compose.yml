@@ -6,7 +6,7 @@ services:
 
       build:
 
-        context : ./MVC/
+        context : .
 
         dockerfile : Dockerfile
 
