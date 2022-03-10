@@ -4,10 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"${workspace}/MVC Project.sln\""
-                bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
                 bat 'docker build -t dotnet .'
                 bat 'dotnet --version'
+                bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"${workspace}/MVC Project.sln\""
+                bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
+                
             }
         }
         stage('Test') {
