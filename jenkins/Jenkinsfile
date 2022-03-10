@@ -7,10 +7,10 @@ pipeline {
                 bat 'docker build -t dotnet .'
             }  
         }
-        stage('Test') {
+        stage('Unit Tests') {
             steps {
-                bat 'dotnetRun'
-            }  
+                sh 'mvn surefire:test'
+            }
         }
     }
 }
