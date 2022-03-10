@@ -14,6 +14,11 @@ pipeline {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
                 }
         }
+        stage('Deploy - Staging') {
+            steps {
+                bat './deploy staging'
+            }
+        }
    
 }
 }
