@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    try {
     stages {
         stage('Build') {
             steps {
@@ -24,7 +23,5 @@ pipeline {
     
     }
     }
-    catch {
-        currentBuild.result = 'FAILURE'
-    }    
+   
 }
