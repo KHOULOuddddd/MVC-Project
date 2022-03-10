@@ -18,10 +18,6 @@ pipeline {
                 always {
                     echo "Post-Test res: ${currentBuild.result}"
                     echo "Post-Test currentResult: ${currentBuild.currentResult}"
-                }
-            }
-            post {
-                always {
                     script {
                         def failed = publishCoverage (failUnhealthy: true, 
                                     globalThresholds: [[thresholdTarget: 'Package', unhealthyThreshold: 50.0]],
