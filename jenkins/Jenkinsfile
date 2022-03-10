@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" --logger \"trx;LogFileName=unit_tests.xml\" --no-build"
-                nunit testResultsPattern: 'TestResults\\unit_tests.xml'
+                nunit testResultsPattern: 'unit_tests.xml'
                 
 }
                 
