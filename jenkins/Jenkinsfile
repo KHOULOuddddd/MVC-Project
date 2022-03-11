@@ -9,9 +9,10 @@ pipeline {
                 
             }
         }
-        stage('Test') {
+        stage('Running unit tests') {
             steps {
-                bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
+                bat "dotnet add ${workspace}/"\"C:/Users/PC DEV2/Desktop/MyProject/MVC Test Project/MVC Test Project.csproj package JUnitTestLogger --version 1.1.0"
+                bat "dotnet test ${workspace}/"\"C:/Users/PC DEV2/Desktop/MyProject/MVC Test Project/MVC Test Project.csproj --logger \"junit;LogFilePath=\"${WORKSPACE}\"/TestResults/1.0.0.\"${env.BUILD_NUMBER}\"/results.xml\" --configuration release --collect \"Code coverage\""
                 }
         }
    

@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4b585bfb-b2b9-4aac-94c3-b8ec17ad108b")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("MVC Project")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("MVC Test Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("MVC Project")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MVC Project")]
+[assembly: System.Reflection.AssemblyProductAttribute("MVC Test Project")]
+[assembly: System.Reflection.AssemblyTitleAttribute("MVC Test Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.
