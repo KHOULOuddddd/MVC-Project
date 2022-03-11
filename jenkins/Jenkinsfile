@@ -6,7 +6,7 @@ pipeline {
                 //bat 'docker build -t dotnet .'
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"${workspace}/MVC Project.sln\""
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
-                bat "\"C:/Program Files/dotnet/dotnet.exe\" run \"${workspace}/MVC Project.sln\""
+                bat "\"C:/Program Files/dotnet/dotnet.exe\" run \"${workspace}/MyProject\""
                 
             }
         }
