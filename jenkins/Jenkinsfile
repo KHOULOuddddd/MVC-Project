@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                bat 'docker build -t dotnet .'
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"${workspace}/MVC Project.sln\""
                 bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"${workspace}/MVC Project.sln\""
                 
@@ -10,10 +11,14 @@ pipeline {
         }
         stage('Running unit tests') {
             steps {
-                bat script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet add \"${workspace}/MVC Test Project.csproj\" "
                 bat returnStatus: true, script: "\"C:/Program Files/dotnet/dotnet.exe\" dotnet test \"${workspace}/MVC Project.sln\" "
                 }
         }
+        stage('Publish HTML report') {
+            steps {
+                publishHTML(target: [allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'CodeCoverage_${BUILD_NUMBER}', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'Code Coverage Report'])
+  }
+}
    
 }
 }
