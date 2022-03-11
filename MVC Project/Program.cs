@@ -14,7 +14,7 @@ namespace MVC_Project
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            Console.WriteLine(Figgle.FiggleFonts.Standard.Render("Hello, World!"));
+            Console.WriteLine("Hello, World!");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
